@@ -1,0 +1,27 @@
+#include <iostream>
+
+class Base {
+public:
+	void func_1() {};
+protected:
+	void func_2() {};
+private:
+	int x_;
+};
+
+class Derived : protected  Base {
+public:
+	void func_3() {
+		func_1();
+		func_2();
+	}
+	void func_1() {
+
+	}
+};
+
+int main() {
+	Derived d;
+	d.func_3();
+	d.func_1();
+}
