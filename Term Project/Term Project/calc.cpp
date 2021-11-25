@@ -102,7 +102,9 @@ int main() {
     string input;
     while (1) {
 
+        cout << ">>> "; // 보고서 작성 후 추가한 부분입니다.
 
+        // 입력
         getline(cin, input);
 
         // 0을 입력받으면 종료
@@ -184,7 +186,7 @@ int main() {
                 if (operatorFirst == 1) {
                     // -라면 음수이므로 에러
                     if (tok == "-") {
-                        cout << "음수는 입력할 수 없습니다." << endl;
+                        cout << "잘못된 입력입니다." << endl;
                     }
                     else
                         cout << "피연산자를 입력해 주세요." << endl;
@@ -233,7 +235,7 @@ int main() {
                 char b = 'b';
 
                 if (atoi(tok.c_str()) < 0) {
-                    cout << "음수는 입력할 수 없습니다." << endl;
+                    cout << "잘못된 입력입니다." << endl;
                     check = 0;
                     break;
                 }
