@@ -15,12 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="OOP12.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="prac02.cpp">
+    <ClCompile Include="calc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
